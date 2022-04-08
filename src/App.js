@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React, {useState} from 'react'; 
 
 import { Container } from './components/UI/Container';
 
@@ -31,10 +31,25 @@ function App() {
   ]
 
 
+  const [state, setState] = useState(toDoList);
+  
+  const clickedStateHandler = (todo) => {
+    if (!todo.doIt) {
+      todo.doIt = true;
+    } else {
+      todo.doIt = false
+    }
+
+    setState([...state])
+
+  }
+
+
+
 
   return (
     <div className="App">
-        <Container toDo={toDoList}>
+        <Container toDo={state} clickedStateContainer={clickedStateHandler}>
           
         </Container>
     </div>

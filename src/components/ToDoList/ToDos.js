@@ -5,6 +5,7 @@ import { ToDoItem } from './ToDoItem'
 import './ToDos.css';
 
 const ToDos = (props) => {
+
     return (
         <div className="todo-container">
             {props.toDoList.map((todo, index) => <ToDoItem 
@@ -12,7 +13,7 @@ const ToDos = (props) => {
             title={todo.title}
             doIt={todo.doIt}
             date={todo.date}
-            
+            clickedState={() => {props.clickedStateToDos(todo)}}
             
             /> )}
             

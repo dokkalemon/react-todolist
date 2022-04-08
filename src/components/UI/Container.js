@@ -6,10 +6,16 @@ import './Container.css';
 
 
 const Container = (props) => {
+
+
+  
+
+
+    
     return (
         <div className="container">
             <NewTodo />
-            <ToDos toDoList={props.toDo}/>
+            <ToDos toDoList={props.toDo} clickedStateToDos={index => props.clickedStateContainer(index)}/>
         </div>
     )
 }
