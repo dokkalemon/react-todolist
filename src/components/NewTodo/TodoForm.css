@@ -1,0 +1,28 @@
+.new-todo-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-todo-form label {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.new-todo-form input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.new-todo-form button {
+    bordeR: none;
+    background-color: rgb(255, 186, 108);
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+    cursor:pointer;
+}

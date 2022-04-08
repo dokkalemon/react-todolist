@@ -28,6 +28,39 @@
   color: #61dafb;
 }
 
+h1, h2, h3, h4, h5, p, label {
+  color: white;
+}
+
+.btn {
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  border-radius: 100%;
+  bordeR: none;
+  background-color: transparent;
+  color: white;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.change-state {
+  background-color: darkgrey;
+
+}
+
+.change-state:hover {
+  background-color: grey
+}
+
+.delete {
+  background-color: red;
+}
+
+.delete:hover {
+  background-color: rgb(204, 0, 0)
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
