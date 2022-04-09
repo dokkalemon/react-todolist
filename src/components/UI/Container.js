@@ -7,15 +7,17 @@ import './Container.css';
 
 const Container = (props) => {
 
-
-  
-
-
-    
     return (
         <div className="container">
-            <NewTodo />
-            <ToDos toDoList={props.toDo} clickedStateToDos={index => props.clickedStateContainer(index)}/>
+            <NewTodo 
+            watchFormNewTodo={props.watchFormContainer}
+            watchFormHandler={props.watchFormHandlerApp}
+            />
+            <ToDos 
+            toDoList={props.toDo} 
+            clickedStateToDos={todo => props.clickedStateContainer(todo)} 
+            deleteTodo={todo => props.cancelTodoContainer(todo)}
+            />
         </div>
     )
 }

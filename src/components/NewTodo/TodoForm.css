@@ -17,7 +17,7 @@
     margin-bottom: 15px;
 }
 
-.new-todo-form button {
+button {
     bordeR: none;
     background-color: rgb(255, 186, 108);
     padding: 10px;

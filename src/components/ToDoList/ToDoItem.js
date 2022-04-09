@@ -25,7 +25,7 @@ const ToDoItem = (props) => {
             </div>
             <div className="todo-item action">
                 <button onClick={props.clickedState} className="btn change-state">{selectIcon()}</button>
-                <button className="btn delete"><i className="fa-solid fa-trash"></i></button>
+                <button onClick={props.deleteTodo} className="btn delete"><i className="fa-solid fa-trash"></i></button>
             </div>
         </div>
     )

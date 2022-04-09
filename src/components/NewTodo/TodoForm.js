@@ -6,11 +6,11 @@ const TodoForm = () => {
     return (
         <div className="new-todo-form">
             <form>
-                <label for="text">Inserisci il Testo</label>
+                <label htmlFor="text">Inserisci il Testo</label>
                 <input type="text" id="text" />
-                <label for="data">Inserisci la data</label>
+                <label htmlFor="data">Inserisci la data</label>
                 <input type="date" id="data" />
-                <button type="submit">Inserisci Todo</button>
+                <button type="submit">Salva</button>
             </form>
         </div>
     )
