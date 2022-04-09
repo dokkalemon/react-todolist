@@ -7,11 +7,16 @@ import './Container.css';
 
 const Container = (props) => {
 
+
+
     return (
         <div className="container">
             <NewTodo 
             watchFormNewTodo={props.watchFormContainer}
             watchFormHandler={props.watchFormHandlerApp}
+            inputTextHandlerNewTodo={props.inputTextHandlerContainer}
+            inputDateHandlerNewTodo={props.inputDateHandlerContainer}
+            saveTodoNewTodo={props.saveTodoContainer}
             />
             <ToDos 
             toDoList={props.toDo} 

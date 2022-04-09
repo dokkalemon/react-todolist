@@ -10,7 +10,7 @@ const ToDoItem = (props) => {
     const day = props.date.toLocaleString('it-IT', {day: '2-digit'})
     const year = props.date.getFullYear()
 
-    const selectIcon = () => !props.doIt ? <i class="fa-solid fa-check"></i> : <i class="fa-solid fa-xmark"></i>
+    const selectIcon = () => !props.doIt ? <i className="fa-solid fa-check"></i> : <i className="fa-solid fa-xmark"></i>
     
     /* const changeStateHandler = () => {state ? setState(false) : setState(true)} */
 
