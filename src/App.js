@@ -32,7 +32,7 @@ function App() {
 
   const [hiddenForm, setHiddenForm] = useState(watchForm);
 
-  const changeWatchForm = () => hiddenForm ? setHiddenForm(false) : setHiddenForm(true);
+  const changeWatchForm = () => !hiddenForm && setHiddenForm(true);
 
   //Save Todo
   let newTodo = {
