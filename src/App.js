@@ -39,17 +39,28 @@ function App() {
     } else {
       todo.doIt = false
     }
-
-    setState([...state])
-
+    setState([...state]) 
   }
 
+  const deleteTodoHandler = (todo) => {
+    state.splice(todo, 1);
+    setState([...state])
+  }
 
+  const watchForm = false
 
+  const [hiddenForm, setHiddenForm] = useState(watchForm);
+
+  const changeWatchForm = () => hiddenForm ? setHiddenForm(false) : setHiddenForm(true)
 
   return (
     <div className="App">
-        <Container toDo={state} clickedStateContainer={clickedStateHandler}>
+        <Container toDo={state} 
+        clickedStateContainer={clickedStateHandler} 
+        cancelTodoContainer={todo => {deleteTodoHandler(todo)}}
+        watchFormContainer={hiddenForm}
+        watchFormHandlerApp={changeWatchForm}
+        >
           
         </Container>
     </div>
