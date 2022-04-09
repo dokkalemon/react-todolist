@@ -7,6 +7,8 @@ import './App.css';
 
 function App() {
 
+
+  //ToDo List
   const toDoList = [
     {
       title: 'Porta a Spasso il cane',
@@ -30,7 +32,7 @@ function App() {
     },
   ]
 
-
+  //Change Todo's State
   const [state, setState] = useState(toDoList);
   
   const clickedStateHandler = (todo) => {
@@ -42,17 +44,21 @@ function App() {
     setState([...state]) 
   }
 
+
+  //Delete Todo
   const deleteTodoHandler = (todo) => {
     state.splice(todo, 1);
     setState([...state])
   }
 
+  //Show Form
   const watchForm = false
 
   const [hiddenForm, setHiddenForm] = useState(watchForm);
 
   const changeWatchForm = () => hiddenForm ? setHiddenForm(false) : setHiddenForm(true);
 
+  //Save Todo
   let newTodo = {
     title: '',
     doIt: false,
@@ -79,8 +85,6 @@ function App() {
     setState([...state])
     setHiddenForm(false)
   }
-
-
 
   return (
     <div className="App">

@@ -1,4 +1,3 @@
-import React, {useState} from 'react';
 
 import './ToDoItem.css';
 
@@ -12,8 +11,6 @@ const ToDoItem = (props) => {
 
     const selectIcon = () => !props.doIt ? <i className="fa-solid fa-check"></i> : <i className="fa-solid fa-xmark"></i>
     
-    /* const changeStateHandler = () => {state ? setState(false) : setState(true)} */
-
     return (
         <div className={`todo ${!props.doIt ? 'negative' : 'positive'}`}>
             <div className="todo-item state">
